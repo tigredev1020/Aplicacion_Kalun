@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/fondo_inicio" />
+        android:src="@drawable/fondo_inicio"/>
 
     <!-- Contenedor del header -->
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -37,10 +37,38 @@
             android:id="@+id/imgInicio"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/kalun_inicio"
+            android:src="@drawable/inicio_kalun"
             app:layout_constraintTop_toBottomOf="@id/imgLogo"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#191D3C"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu_navegacion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/btnSolCentral"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/kalun_menu"
+        android:scaleType="centerInside"
+        android:elevation="16dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

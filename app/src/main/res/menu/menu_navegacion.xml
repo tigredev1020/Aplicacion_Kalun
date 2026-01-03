@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_inicio"
+        android:icon="@drawable/inicio_menu"
+        android:title="Inicio" />
+    <item
+        android:id="@+id/nav_beneficios"
+        android:icon="@drawable/beneficios_menu"
+        android:title="Beneficios" />
+
+    <item
+        android:id="@+id/nav_spacer"
+        android:enabled="false"
+        android:icon="@android:color/transparent"
+        android:title="" />
+
+    <item
+        android:id="@+id/nav_herramientas"
+        android:icon="@drawable/herramientas_menu"
+        android:title="Herramientas" />
+    <item
+        android:id="@+id/nav_perfil"
+        android:icon="@drawable/perfil_menu"
+        android:title="Perfil" />
+</menu>
